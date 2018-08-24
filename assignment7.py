@@ -2,9 +2,17 @@
 d1={}
 n=int(input())
 for i in range(0,n):
-    j=int(input())
-    d1[j]=input()
+    d1[i]=input()
 print(d1)
+ele=input()
+flag= 0
+for key in d1.keys():
+    if d1[key]==ele:
+        print(key)
+        flag =1
+        break
+if flag==0:
+    print("Key not found")
 
 
 #nexted dictionary nd display particular students marks
@@ -20,3 +28,4 @@ for i in range(1,3):
 print(d1)
 stu=input()
 print(d1[stu])
+
