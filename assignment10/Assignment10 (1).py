@@ -33,10 +33,22 @@ with open('abcd.txt') as f:
 
 # Question 5
 
-file = open("ab.txt")
-column = []
-for line in file:
-    column.append(int(line))
-column.sort()
-print(column)
-file.close()
+num = ['4', '2', '10', '8','7','12','99','1','66','3']
+
+with open('abc.txt', 'w') as filehandle:  
+    for listitem in num:
+        filehandle.write('%s\n' % listitem)
+
+f=open("test.txt")
+num=[]
+for l in f:
+    num.append(int(l))
+num.sort()
+f.close
+with open('news.txt', 'w') as filehandle:  
+    for listitem in num:
+        filehandle.write('%s\n' % listitem)
+
+
+
+
