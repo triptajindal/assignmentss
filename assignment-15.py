@@ -7,7 +7,7 @@ try:
     cursor=con.cursor()
     cursor.execute(query)
     con.commit()
-    for i in range(0,5):
+    for i in range(0,10):
         name=input("name: ")
         marks=input("marks: ")
         lst=[(name, marks)]
