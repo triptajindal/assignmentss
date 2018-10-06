@@ -1,0 +1,25 @@
+{% extends "template.html" %}
+{% block body %}
+<form action="" method="post">
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th ><font color="white"><h4>Student-Name</h4></font></th>
+      <th ><font color="white"><h4>Present</h4></font></th>
+      <th ><font color="white"><h4>Absent</h4></font></th>
+    </tr>
+  </thead>
+  <tbody style="border-style:solid;">
+   {% for items in d %}
+    <tr>
+      <td><font color="black">{{items['student']}}</font></td>
+      <td><input type="radio" name="{{items['_id']}}" value="Present">       </td>
+      <td><input type="radio" name="{{items['_id']}}" value="Absent" checked></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<br>
+<button type="submit" class="btn btn-primary" > UPDATED DATA</button>
+</form>
+{% endblock %}
